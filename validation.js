@@ -43,6 +43,6 @@
         ValidatedUIControl($('.required-input', this), isNotEmpty);
         ValidatedUIControl($('.required-email', this), isValidEmail);
 
-        return !$('[class*=" required-"][data-valid=false]').length;
+        return !$('[class*=" required-"][data-valid=false]', this).length;
     };
 })(jQuery);

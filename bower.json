@@ -1,0 +1,15 @@
+{
+  "name": "jquery-validate",
+  "version": "0.0.1",
+  "homepage": "https://github.com/cajones/jquery-validate",
+  "authors": [
+    "Chris Jones <chris.jones@spongeuk.com>"
+  ],
+  "description": "Another jQuery validation library.",
+  "main": "validation.js",
+  "keywords": [
+    "jQuery",
+    "validate"
+  ],
+  "license": "GPL"
+}
