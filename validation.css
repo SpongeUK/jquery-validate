@@ -1,0 +1,12 @@
+.required-input .error-message {
+	display: none;
+}
+.required-input.error .error-message {
+	display: block;
+}
+.required-email .error-message {
+	display: none;
+}
+.required-email.error .error-message {
+	display: block;
+}
