@@ -19,7 +19,7 @@
                 if(check.call(this)) {
                     $scope.removeClass('error');
                     $message.hide();
-                    $scope.attr('data-valid', true);                         
+                    $scope.attr('data-valid', true);                    
                 } else {
                     $scope.addClass('error');
                     $message.show();
@@ -30,7 +30,7 @@
 
         $(selector).each(function () {
             var $scope = $(this),
-                $input = $('input', $scope),
+                $input = $('input, select', $scope),
                 $message = $('.error-message', $scope);
             
             var handler = ControlStateHandler($scope, $message, check);
@@ -42,6 +42,7 @@
     $.fn.requiredFields = function() {
         ValidatedUIControl($('.required-input', this), isNotEmpty);
         ValidatedUIControl($('.required-email', this), isValidEmail);
+        ValidatedUIControl($('.required-select', this), isNotEmpty);
 
         return !$('[class*=" required-"][data-valid=false]', this).length;
     };
